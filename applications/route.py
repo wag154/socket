@@ -30,7 +30,7 @@ def add():
 @socketio.on('connect')
 def handle_connect():
     print("Connected user")
-    
+#the socket.on('value') can be thought of as "event" that we can define endpoints for and the frontend can use. 
 @socketio.on('disconnect')
 def handle_disconnect():
     print("Client disconnected")
